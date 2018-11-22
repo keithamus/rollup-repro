@@ -1,0 +1,10 @@
+{
+  "name": "rollup-repro",
+  "scripts": {
+    "test": "rm -rf dist; rollup -c rollup.config.js && tail -n+1 dist/* | grep --color -E '==.*$|__chunk_\\d|$'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^0.67.3"
+  }
+}
